@@ -3,6 +3,7 @@ import name2 from './hey.js'
 import {test} from './hey.js'
 import fs from 'fs'
 import './style.scss'
+import './helloWorld.js'
 
 test()
 name2()

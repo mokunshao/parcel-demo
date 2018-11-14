@@ -206,7 +206,9 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./backgrond.png":[["backgrond.181ba95e.png","backgrond.png"],"backgrond.png"],"_css_loader":"C:/Users/Ken/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"main.js":[function(require,module,exports) {
+},{"./backgrond.png":[["backgrond.181ba95e.png","backgrond.png"],"backgrond.png"],"_css_loader":"C:/Users/Ken/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"helloWorld.js":[function(require,module,exports) {
+console.log(123456789);
+},{}],"main.js":[function(require,module,exports) {
 "use strict";
 
 var _hey = _interopRequireWildcard(require("./hey.js"));
@@ -214,6 +216,8 @@ var _hey = _interopRequireWildcard(require("./hey.js"));
 var _fs = _interopRequireDefault(require("fs"));
 
 require("./style.scss");
+
+require("./helloWorld.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -231,7 +235,7 @@ var _ref = [1, 2, 3],
     a = _ref[0],
     b = _ref[2];
 console.log([a, b]);
-},{"./hey.js":"hey.js","fs":"C:/Users/Ken/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/_empty.js","./style.scss":"style.scss"}],"C:/Users/Ken/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./hey.js":"hey.js","fs":"C:/Users/Ken/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/_empty.js","./style.scss":"style.scss","./helloWorld.js":"helloWorld.js"}],"C:/Users/Ken/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -258,7 +262,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "11741" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "7403" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
