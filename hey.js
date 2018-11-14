@@ -1,5 +1,15 @@
-export default function (){
-    console.log('hey')
+export function name(){
+    console.log('name')
 };
 
-console.log('can you see me?')
+export default function name2(){
+    console.log('name2')
+}
+
+console.log('name3')
+
+export let hello ='hello'
+
+export function test(){
+    console.log('test')
+}

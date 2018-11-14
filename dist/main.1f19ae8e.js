@@ -110,14 +110,28 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = _default;
+exports.name = name;
+exports.default = name2;
+exports.test = test;
+exports.hello = void 0;
 
-function _default() {
-  console.log('hey');
+function name() {
+  console.log('name');
 }
 
 ;
-console.log('can you see me?');
+
+function name2() {
+  console.log('name2');
+}
+
+console.log('name3');
+var hello = 'hello';
+exports.hello = hello;
+
+function test() {
+  console.log('test');
+}
 },{}],"C:/Users/Ken/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/_empty.js":[function(require,module,exports) {
 
 },{}],"C:/Users/Ken/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
@@ -195,7 +209,7 @@ module.hot.accept(reloadCSS);
 },{"./backgrond.png":[["backgrond.181ba95e.png","backgrond.png"],"backgrond.png"],"_css_loader":"C:/Users/Ken/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"main.js":[function(require,module,exports) {
 "use strict";
 
-var _hey = _interopRequireDefault(require("./hey.js"));
+var _hey = _interopRequireWildcard(require("./hey.js"));
 
 var _fs = _interopRequireDefault(require("fs"));
 
@@ -203,7 +217,12 @@ require("./style.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+(0, _hey.test)();
 (0, _hey.default)();
+(0, _hey.name)();
+console.log(_hey.hello);
 var txt = "\u6211\u662F test.txt \u91CC\u7684\u5185\u5BB9";
 console.log(txt);
 var abcxyz = 'hello world';
@@ -239,7 +258,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "2783" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "11741" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

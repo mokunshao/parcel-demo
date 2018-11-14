@@ -1,8 +1,13 @@
-import hey from './hey.js'
+import {name,hello} from './hey.js'
+import name2 from './hey.js'
+import {test} from './hey.js'
 import fs from 'fs'
 import './style.scss'
 
-hey();
+test()
+name2()
+name()
+console.log(hello)
 
 const txt = fs.readFileSync('test.txt', 'utf8')
 console.log(txt)
